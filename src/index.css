@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.homepage{
+  background-image: url('https://i.ibb.co/b6Q3Ftv/Red-and-White-Modern-Welcome-to-My-Channel-Youtube-Intro-5.gif');
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.modal-content button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+
+.perfect-animation{
+  position: relative;
+  color: #ddd5d3;
+  -webkit-text-stroke: 0.3vw  #ffffff;
+  text-transform: uppercase;
+}
+
+.perfect-animation::before
+{
+  content:  attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+
+  color: #000000;
+  -webkit-text-stroke:  0vw #e84118;
+  border-right: 2px solid #040300;
+  overflow: hidden;
+  animation: animate 10s linear ;
+}
+
+@keyframes animate
+{
+   0%,10%,100%
+   {
+    width: 0;
+   }
+   70%,90%
+   {
+    width: 100%;
+   }
+}
+
+
+.login-animation{
+  position: relative;
+  color: #ddd5d3;
+  -webkit-text-stroke: 0.3vw  #ffffff;
+  text-transform: uppercase;
+}
+
+.login-animation::before
+{
+  content:  attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+
+  color: #000000;
+  -webkit-text-stroke:  0vw #e84118;
+  border-right: 2px solid #040300;
+  overflow: hidden;
+  animation: animate 10s linear ;
+}
+
+@keyframes animate
+{
+   0%,10%,100%
+   {
+    width: 0;
+   }
+   70%,90%
+   {
+    width: 100%;
+   }
+}
